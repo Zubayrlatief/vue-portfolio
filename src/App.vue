@@ -1,4 +1,5 @@
 <template>
+ <div>
  <NavBar/>
  <MyHome/>
  <AboutMe/>
@@ -8,6 +9,8 @@
  <ContactMe/>
  <MyFooter/>
  <router-view/>
+
+ </div>
 </template>
 <script>
 import NavBar from './components/NavBar.vue'
@@ -19,7 +22,7 @@ import MyProjects from './components/MyProjects.vue'
 import MyTestimonials from './components/MyTestimonials.vue'
 import ContactMe from './components/ContanctMe.vue'
 export default {
-  components:
+  components:{}
 }
 </script>
 
