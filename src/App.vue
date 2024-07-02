@@ -1,10 +1,27 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+ <NavBar/>
+ <MyHome/>
+ <AboutMe/>
+ <MyResume/>
+ <MyProjects/>
+ <MyTestimonials/>
+ <ContactMe/>
+ <MyFooter/>
+ <router-view/>
 </template>
+<script>
+import NavBar from './components/NavBar.vue'
+import MyFooter from './components/MyFooter.vue'
+import MyHome from './components/MyHome.vue'
+import MyAbout from './components/MyAbout.vue'
+import MyResume from './components/MyResume.vue'
+import MyProjects from './components/MyProjects.vue'
+import MyTestimonials from './components/MyTestimonials.vue'
+import ContactMe from './components/ContanctMe.vue'
+export default {
+  components:
+}
+</script>
 
 <style>
 #app {
