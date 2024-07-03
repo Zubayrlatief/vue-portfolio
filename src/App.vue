@@ -2,7 +2,7 @@
  <div>
  <NavBar/>
  <MyHome/>
- <AboutMe/>
+ <MyAbout/>
  <MyResume/>
  <MyProjects/>
  <MyTestimonials/>
@@ -22,29 +22,33 @@ import MyProjects from './components/MyProjects.vue'
 import MyTestimonials from './components/MyTestimonials.vue'
 import ContactMe from './components/ContanctMe.vue'
 export default {
-  components:{}
+  components:{
+    NavBar,
+    MyFooter,
+    MyHome,
+    MyAbout,
+    MyProjects,
+    MyResume,
+    MyTestimonials,
+    ContactMe,
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .body{
+   background-color: rgb(222, 184, 184);
+   overflow-x: hidden;
+   font-family: "Roboto Slab", serif;
+ }
+ section{
+    width: 100%;
+    padding: 80px 12%;
+ }
 </style>
