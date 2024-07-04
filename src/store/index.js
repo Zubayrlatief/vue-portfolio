@@ -3,6 +3,7 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
   aboutMe :null,
+
   projects :null,
   education :null,
   experience :null,
@@ -10,6 +11,14 @@ export default createStore({
   softSkills :null,
   testimonials :null
    },
+    projects :null,
+    :null,
+    :null,
+    :null,
+    :null,
+    :null,
+
+  },
   getters: {
     getItemsByIndex: (state) => (index) => {
       return state.items[index];
