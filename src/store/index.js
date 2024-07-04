@@ -3,7 +3,7 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
   aboutMe :null,
-    :null,
+    projects :null,
     :null,
     :null,
     :null,
