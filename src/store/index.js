@@ -4,7 +4,7 @@ export default createStore({
   state: {
   aboutMe :null,
   projects :null,
-  eductaion :null,
+  education :null,
   experience :null,
   codingSkills :null,
   softSkills :null,
@@ -23,7 +23,7 @@ export default createStore({
       state.projects = payload
     },
      setEducation (state,payload){
-       state.eductaion = payload
+       state.education = payload
     },
     setExperience (state,payload){
        state.experience = payload
@@ -42,11 +42,11 @@ export default createStore({
     async getAboutMe ({commit}) {
       let fetchInfo = await fetch('https://zubayrlatief.github.io/JsonFileForPortfolio/Data/data.json')
       let data = await fetchInfo.json()
-      let {aboutMe, projects ,eductaion, experience, codingSkills, softSkills, testimonials} = data
+      let {aboutMe, projects ,education, experience, codingSkills, softSkills, testimonials} = data
       console.log(data)
       commit('setAboutMe', aboutMe)
       commit('setProjects', projects)
-      commit('setEduction', eductaion)
+      commit('setEducation', education)
       commit('setExperience', experience)
       commit('setCodingSkills', codingSkills)
       commit('setsoftSkills', softSkills)
