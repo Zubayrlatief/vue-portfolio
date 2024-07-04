@@ -6,11 +6,10 @@ export default createStore({
   projects :null,
   eductaion :null,
   experience :null,
-  codingSkills  :null,
+  codingSkills :null,
   softSkills :null,
-  testimonials :null,
-
-  },
+  testimonials :null
+   },
   getters: {
     getItemsByIndex: (state) => (index) => {
       return state.items[index];
