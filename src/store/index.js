@@ -49,7 +49,7 @@ export default createStore({
       commit('setEducation', education)
       commit('setExperience', experience)
       commit('setCodingSkills', codingSkills)
-      commit('setsoftSkills', softSkills)
+      commit('setSoftSkills', softSkills)
       commit('setTestimonials', testimonials)
     },
   },
