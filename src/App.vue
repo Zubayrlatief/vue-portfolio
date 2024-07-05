@@ -42,10 +42,13 @@ export default {
     padding: 0;
     box-sizing: border-box;
  }
- .body{
+ #home, #about, #projects, #testimonials, #resume, #contact  {
    background-color: rgb(222, 184, 184);
    overflow-x: hidden;
    font-family: "Roboto Slab", serif;
+ }
+ #footer{
+
  }
  section{
     width: 100%;

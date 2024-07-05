@@ -31,13 +31,5 @@
   }
   </script>
   <style scoped>
-  #whatsupbrother{
-   padding-bottom: 120px;
-}
-#whatsupbrother2{
-   padding-bottom: 70px;
-}
-.card-img-top{
-   block-size: 300px;
-}
+ 
   </style>

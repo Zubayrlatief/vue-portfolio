@@ -17,7 +17,7 @@
 </div>
 </section>
 
-<section>
+<section id="resume">
   <div class="card mb-3" style="max-width: 540px;">
   <div v-for="experience in $store.state.experience" :key="experience.placeOfInstitution" class="row g-0">
     <div class="col-md-4">
@@ -34,7 +34,7 @@
 </div>
 </section>
 
-  <section>
+  <section id="resume">
   <div class="card mb-3" style="max-width: 540px;">
   <div v-for="softSkills in $store.state.softSkills" :key="softSkills.name" class="row g-0">
     <div class="col-md-4">
@@ -50,7 +50,7 @@
 </div>
 </section>
 
-  <section>
+  <section id="resume">
   <div class="card mb-3" style="max-width: 540px;">
   <div v-for="codingSkills in $store.state.codingSkills" :key="codingSkills.name" class="row g-0">
     <div class="col-md-4">
