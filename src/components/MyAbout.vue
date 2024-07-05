@@ -6,6 +6,7 @@
       <div class="row d-flex justify-content-evenly flex-wrap">
         <div class="col d-flex justify-content-center">
           <img src="https://iili.io/J46fQsf.md.jpg" class="shadow-pop-bl w-65 h-75" loading="lazy" alt="about1">
+          https://zubayrlatief.github.io/portfolio_hostedImages/beach.jpg
         </div>
         <div class="col">
           <p class="aboutText">{{$store.state.aboutMe}}</p>

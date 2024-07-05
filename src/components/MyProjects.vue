@@ -1,6 +1,6 @@
 <template>
 
-      <div class="col">
+      <div id="projects" class="col">
         <h1 class="text-center" id="whatsupbrother">My Projects</h1>
         <div class="row d-flex justify-content-evenly flex-wrap" v-for="project in $store.state.projects" :key="project.name">
           <div class="col" >

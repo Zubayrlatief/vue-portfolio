@@ -7,7 +7,7 @@
         <p>Aspiring Software Developer.</p>
       </div>
       <div class="colFirst">
-        <img src="https://zubayrlatief.github.io/portfolio_hostedImages/beach.jpg" class="shadow-pop-tr" alt="porfolio"
+        <img src="https://zubayrlatief.github.io/portfolio_hostedImages/myportfolioimg.jpg" class="shadow-pop-tr" alt="porfolio"
           id="smile">
       </div>
     </div>
@@ -31,4 +31,5 @@ export default {
 .colFirst{
    flex-basis: 50%;
 }
+
 </style>

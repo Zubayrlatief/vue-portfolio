@@ -3,21 +3,12 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
   aboutMe :null,
-
   projects :null,
   education :null,
   experience :null,
   codingSkills :null,
   softSkills :null,
   testimonials :null
-   },
-    projects :null,
-    :null,
-    :null,
-    :null,
-    :null,
-    :null,
-
   },
   getters: {
     getItemsByIndex: (state) => (index) => {
