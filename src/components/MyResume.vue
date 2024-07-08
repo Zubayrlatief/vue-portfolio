@@ -4,8 +4,8 @@
       <h1 class="title">Experience</h1>
         <div class="about-containers">
           <div class="details-container">
-            <div class="article-container">
-              <article>
+            <div class="article-container" v-if="getExperience()">
+              <article v-for="codingSkills in getExperience()" :key="codingSkills">
                 <img
                    :src="codingSkills.image"
                   alt="Experience icon"
@@ -24,7 +24,19 @@
 
 <script>
 export default {
-  
+  methods: {
+    getExperience() {
+      this.$store.state.codingSkills;
+    }
+  },
+  computed:{
+    getData(){
+      return this.$store.dispatch('getAboutMe')
+    }
+  },
+  mounted() {
+      this.getData
+    },
 }
 </script>
 <style>
