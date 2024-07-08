@@ -43,7 +43,7 @@ export default {
     box-sizing: border-box;
  }
  #home, #about, #projects, #testimonials, #resume, #contact  {
-   background-color: rgb(222, 184, 184);
+   background-color: grey;
    overflow-x: hidden;
    font-family: "Roboto Slab", serif;
  }
@@ -54,4 +54,5 @@ export default {
     width: 100%;
     padding: 80px 12%;
  }
+ 
 </style>
