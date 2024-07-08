@@ -17,7 +17,7 @@
           <a class="nav-link" href="#projects">PROJECTS</a>
           <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
           <a class="nav-link" href="#mail">CONTACT ME</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1RPOeg9DLwZba40diTmlw1QJc3GfAFHKr/view?usp=sharing" role="button">MY CV</a> 
+        <a class="btn" href="https://drive.google.com/file/d/1RPOeg9DLwZba40diTmlw1QJc3GfAFHKr/view?usp=sharing" role="button">MY CV</a> 
         </div>
       </div>
     </div>

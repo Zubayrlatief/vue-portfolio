@@ -1,37 +1,38 @@
 <template>
-
-<section class="hero-area section-bg pt-140 pb-100" id="home">
-    <div class="container">
-        <div class="row">
-        <div class="col-lg-6">
-            <div class="hero-content">
-                <h5 class="sub-title">Welcome</h5>
-                <h2 class="title">
-                    <span>Im</span>
-                    " Zubayr"
-                </h2>
-                <h2 class="cd-headline clip is-full-width">
-                    " a "
-                    <span class="cd-words-wrapper">
-                        
-                    </span>
-                </h2>
-                <p>Passionate fullstack web developer excited to increase my experience</p>
-                <div class="hero-btn mt-4">
-                    <a href="#contact" class="button">HIRE ME</a>
-                    <a href="#projects" class="button button-hover">MY WORK</a>
-                </div>
-            </div>
-            </div>
+<section id="profile">
+      <div class="section__pic-container">
+        <img src="https://zubayrlatief.github.io/portfolio_hostedImages/myportfolioimg.jpg" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Zubayr</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            href="https://drive.google.com/file/d/1RPOeg9DLwZba40diTmlw1QJc3GfAFHKr/view?usp=sharing"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" href="#contact">
+            Contact Info
+          </button>
         </div>
-        <div class="col-lg-6">
-            <div class="hero-img">
-                <img src="https://zubayrlatief.github.io/portfolio_hostedImages/myportfolioimg.jpg
-" alt="img">
-            </div>
+        <div id="socials-container">
+          <img
+            src="https://zubayrlatief.github.io/portfolio_hostedImages/icons8-linkedin-120.png"
+            alt="LinkedIn profile"
+            class="icon"
+            href="https://za.linkedin.com/in/zubayr-latief-254805280"
+          />
+          <a href="https://github.com/Zubayrlatief"><img
+            src="https://zubayrlatief.github.io/portfolio_hostedImages/icons8-github-120.png"
+            alt="Github profile"
+            class="icon"
+          /></a> 
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
 </template>
 <script>
@@ -41,200 +42,104 @@ export default {
 </script>
 
 <style>
-.header {
-	padding: 10px 0px;
+#profile {
+  background: grey;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
 }
 
-.header.sticky {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 9999;
-	-webkit-animation: sticky 1s;
-	-moz-animation: sticky 1s;
-	-o-animation: sticky 1s;
-	animation: sticky 1s;
-	-webkit-box-shadow: 2px 4px 8px rgba(51, 51, 51, 0.25);
-	-moz-box-shadow: 2px 4px 8px rgba(51, 51, 51, 0.25);
-	box-shadow: 2px 4px 8px rgba(51, 51, 51, 0.25);
-	background-color: #fff;
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
 
-@-webkit-keyframes sticky {
-	0% {
-		-webkit-transform: translateY(-100%);
-		transform: translateY(-100%);
-	}
-	100% {
-		-webkit-transform: translateY(0%);
-		transform: translateY(0%);
-	}
+.section__text {
+  align-self: center;
+  text-align: center;
 }
 
-@keyframes sticky {
-	0% {
-		-webkit-transform: translateY(-100%);
-		transform: translateY(-100%);
-	}
-	100% {
-		-webkit-transform: translateY(0%);
-		transform: translateY(0%);
-	}
+.section__text p {
+  font-weight: 600;
 }
 
-.mobile-menu {
-	display: none;
+.section__text__p1 {
+  text-align: center;
 }
 
-.logo h2 {
-	font-size: 35px;
-	font-weight: 900;
-	line-height: 1;
-	margin-top: 4px;
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
-.logo h2 a {
-	color: #8e43e7;
+.title {
+  font-size: 3rem;
+  text-align: center;
 }
 
-
-/*------- Menu -------*/
-
-.menu {
-	text-align: right;
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
-.menu ul li {
-	display: inline-block;
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
 }
 
-.menu ul li a {
-	position: relative;
-	padding: 10px 15px;
-	background-color: transparent;
-	color: #30343d;
-	font-weight: 700;
-	font-size: 16px;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	display: inline-block;
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.menu ul li a:hover {
-	color: #e85c41;
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
 }
 
-.menu ul li a::after {
-	content: "";
-	clear: both;
-	display: block;
-	overflow: hidden;
-	width: 0%;
-	height: 2px;
-	background: #e85c41;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.menu ul li a:before {
-	content: "";
-	clear: both;
-	display: block;
-	overflow: hidden;
-	width: 0%;
-	height: 2px;
-	background: #e85c41;
-	position: absolute;
-	left: 0;
-	top: 0;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
 }
 
-.menu ul li.current a {
-	color: #e85c41;
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
 }
 
-.menu ul li.current a::before {
-	width: 100%;
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
 }
 
-.menu ul li.current a::after {
-	width: 100%;
+.btn-color-2 {
+  background: none;
 }
 
-
-/*---------------------------------
-		3.Banner CSS
-----------------------------------*/
-
-.hero-content {
-	margin-top: 50px;
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-h5.sub-title {
-	color: #8c89a2;
-	font-weight: 600;
-	font-size: 20px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-.hero-img {
-	text-align: center;
-}
-
-.hero-img img {
-	width: 80%;
-	border-radius: 50%;
-}
-
-.hero-content h2.title {
-	font-size: 48px;
-	line-height: 1.2;
-	font-weight: 600;
-	color: #403b66;
-	margin-top: 10px;
-}
-
-.hero-content h2.title span {
-	font-weight: 400;
-}
-
-.hero-content h2 {
-	font-size: 48px;
-	line-height: 1.2;
-	font-weight: 600;
-	color: #403b66;
-}
-
-.hero-content h2 span {
-	padding: 0px;
-}
-
-.cd-headline.clip span {
-	padding: 0px;
-}
-
-.hero-content h2 span b {
-	font-weight: 400;
-}
-
-.hero-content p {
-	color: #686767;
-	font-size: 18px;
-	margin-top: 20px;
-	line-height: 28px;
-	margin-bottom: 10px;
-	display: inline-block;
-}
-
-.hero-btn a {
-	margin-right: 15px;
+.btn-container {
+  gap: 1rem;
 }
 
 </style>

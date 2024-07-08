@@ -1,18 +1,23 @@
 <template lang="">
-   <section class="secondSection" id="about">
-    <div class="container-fluid">
-      <h2 class="textAbout d-flex justify-content-center">About Me</h2>
-      </div>
-      <div class="row d-flex justify-content-evenly flex-wrap">
-        <div class="col d-flex justify-content-center">
-          <img src="https://iili.io/J46fQsf.md.jpg" class="shadow-pop-bl w-65 h-75" loading="lazy" alt="about1">
-          https://zubayrlatief.github.io/portfolio_hostedImages/beach.jpg
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+        <div class="section__pic-container">
+          <img
+            src="https://zubayrlatief.github.io/portfolio_hostedImages/beachpicwithsurfboard.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <div class="col">
-          <p class="aboutText">{{$store.state.aboutMe}}</p>
-        </div>
+          <div class="about-containers">
+            <div class="details-container">
+            
+              <h3>A little bit about me</h3>
+              <p>{{$store.state.aboutMe}}</p>
+            
+            </div>
       </div>
-  </section>
+    </section>
 </template>
 <script>
 export default {
@@ -27,16 +32,94 @@ export default {
 }
 </script>
 <style scoped>
-.aboutText{
-   margin-top: 10%;
+#about {
+  position: relative;
 }
-#smile{
-   margin-left: 150px;
-   width: 400px;
-   height: 530px;
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
-.textAbout{
-   margin-bottom: 5%;
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
 }
     
 </style>
