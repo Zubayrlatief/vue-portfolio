@@ -29,6 +29,8 @@ export default {
     },
 }
 </script>
-<style lang="">
-    
+<style>
+    .card-img-top{
+     width: 50%
+    }
 </style>

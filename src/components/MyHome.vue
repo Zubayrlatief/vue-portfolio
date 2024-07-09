@@ -19,12 +19,11 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
+          <a href="https://za.linkedin.com/in/zubayr-latief-254805280"><img
             src="https://zubayrlatief.github.io/portfolio_hostedImages/icons8-linkedin-120.png"
             alt="LinkedIn profile"
             class="icon"
-            href="https://za.linkedin.com/in/zubayr-latief-254805280"
-          />
+          /></a>
           <a href="https://github.com/Zubayrlatief"><img
             src="https://zubayrlatief.github.io/portfolio_hostedImages/icons8-github-120.png"
             alt="Github profile"
@@ -52,8 +51,8 @@ export default {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   margin: auto 0;
 }
 
