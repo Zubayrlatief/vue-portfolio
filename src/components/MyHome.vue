@@ -1,30 +1,29 @@
 <template>
 <section id="profile">
       <div class="section__pic-container">
-        <img src="https://zubayrlatief.github.io/portfolio_hostedImages/myportfolioimg.jpg" alt="profile picture" />
+        <img src="https://zubayrlatief.github.io/portfolio_hostedImages/myportfolioimg.jpg" alt="profile picture" loading="lazy">
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Zubayr</h1>
         <p class="section__text__p2">Full Stack Developer</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            href="https://drive.google.com/file/d/1RPOeg9DLwZba40diTmlw1QJc3GfAFHKr/view?usp=sharing"
-          >
-            Download CV
+         <a href="https://drive.google.com/file/d/1RPOeg9DLwZba40diTmlw1QJc3GfAFHKr/view?usp=sharing" target="_blank">
+         <button class="btn btn-color-2">
+             Download CV
           </button>
+          </a>
           <button class="btn btn-color-1" href="#contact">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
-          <a href="https://za.linkedin.com/in/zubayr-latief-254805280"><img
-            src="https://zubayrlatief.github.io/portfolio_hostedImages/icons8-linkedin-120.png"
+          <a href="https://za.linkedin.com/in/zubayr-latief-254805280" target="_blank"><img
+            src="https://zubayrlatief.github.io/portfolio_hostedImages/icons8-linkedin-120.png" 
             alt="LinkedIn profile"
             class="icon"
           /></a>
-          <a href="https://github.com/Zubayrlatief"><img
+          <a href="https://github.com/Zubayrlatief" target="_blank"><img
             src="https://zubayrlatief.github.io/portfolio_hostedImages/icons8-github-120.png"
             alt="Github profile"
             class="icon"
@@ -46,7 +45,7 @@ export default {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 60vh;
 }
 
 .section__pic-container {

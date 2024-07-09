@@ -1,24 +1,30 @@
-<template lang="">
+<template>
 <section id="resume">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
         <div class="about-containers">
           <div class="details-container">
             <div class="article-container" v-if="getExperience()">
-              <article v-for="codingSkills in getExperience()" :key="codingSkills">
+              <article v-for="experience in getExperience()" :key="experience">
                 <img
-                   :src="codingSkills.image"
+                   :src="experience.image"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>{{ codingSkills.name }}</h3>
-                  <p>{{ codingSkills.ability }}</p>
+                  <h3>{{ experience.placeOfInstitution }}</h3>
+                  <p>{{ experience.description }}</p>
                 </div>
               </article>
         </div>
         </div>
       </div>
+      <div class="card">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
     </section>
 </template>
 

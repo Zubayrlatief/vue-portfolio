@@ -1,21 +1,19 @@
 <template>
-<section id="testimonials" class="container-fluid">
-    <h2 class="text-center" id="whatsupbrother2">TESTIMONIALS</h2>
-    <div class="d-flex justify-content-evenly flex-wrap"  v-for="testimonials in $store.state.testimonials" :key="testimonials.name">
-      <div class="col m-2" >
-        <div class="card">
-          <img :src="testimonials.image" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h4>{{ testimonials.name }}</h4>
-            <h6>{{ testimonials.role }}</h6>
-            <p class="card-text">{{ testimonials.comment }}
-            </p>
-          </div>
-        </div>
-        </div>
+  <section id="testimonials">
+  <div class="row">
+  <div class="col-sm-2" v-for="testimonials in $store.state.testimonials" :key="testimonials.name">
+    <div class="card">
+      <div class="card-body">
+        <img :src="testimonials.image" class="card-img">
+        <h5 class="card-title">{{ testimonials.name }}</h5>
+        <h6 class="card-title-1">{{ testimonials.role }}</h6>
+        <p class="card-text">{{ testimonials.comment }}</p>
+        <p></p>
       </div>
-  </section>
-
+    </div>
+  </div>
+  </div>
+</section>
 </template>
 <script>
 export default {
@@ -30,7 +28,8 @@ export default {
 }
 </script>
 <style>
-    .card-img-top{
-     width: 50%
+    .card-img{
+      width: 100px;
+      justify-content: center;
     }
 </style>
