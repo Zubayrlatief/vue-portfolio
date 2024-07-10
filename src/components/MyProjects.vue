@@ -14,18 +14,17 @@
             </div>
             <h2 class="experience-sub-title project-title">{{ project.name }}</h2>
             <div class="btn-container">
+              <a :href="project.github" target="blank" rel="noopener noreferrer">
               <button
-                class="btn btn-color-2 project-btn"
-                :href="project.github"
-              >
+                class="btn btn-color-2 project-btn">
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                :href="project.vercel"
-              >
-                Live Demo
-              </button>
+            </a>
+            <a :href="project.vercel" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-color-2 project-btn">
+              Live Demo
+             </button>
+            </a>
             </div>
           </div>
           </div>
@@ -43,10 +42,13 @@
   #projects {
   position: relative;
 }
+.details-container{
+  background-color: grey;
+}
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: grey;
+  background: grey;
 }
 
 .project-img {
@@ -63,7 +65,21 @@
 
 .project-btn {
   color: black;
-  border-color: rgb(163, 163, 163);
+  border-color: grey;
+}
+.article-container{
+   background-color: grey;
+}
+.details-container {
+  background-color: grey!important;
 }
 
+.color-container {
+  border-color: grey;
+  background: grey!important;
+}
+
+.article-container {
+  background-color: grey!important;
+}
   </style>

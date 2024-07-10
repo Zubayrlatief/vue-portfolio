@@ -19,16 +19,19 @@
         </div>
         </div>
       </div>
-  
-<div class="card-deck" v-for="codingSkills in $store.state.codingSkills" :key="codingSkills.name">
+  <div class="row-sm-10">
+  <div class="row-sm-10">
+<div class="card-deck w-100" v-for="codingSkills in $store.state.codingSkills" :key="codingSkills.name">
   <div class="card">
-    <img class="card-img-top" :src="codingSkills.image" alt="Card image cap">
+    <img class="card-img-top d-flex" :src="codingSkills.image" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{ codingSkills.name }}</h5>
       <p class="card-text">{{ codingSkills.ability }}</p>
     </div>
   </div>
   </div>
+</div>
+</div>
     </section>
 </template>
 
@@ -103,5 +106,8 @@ article .icon {
 .card-text{
   justify-content: center;
   text-align: center;
+}
+.card-deck{
+  background-color: grey;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section id="testimonials">
   <div class="row">
-  <div class="col-sm-2" v-for="testimonials in $store.state.testimonials" :key="testimonials.name">
+  <div class="col-md-4" v-for="testimonials in $store.state.testimonials" :key="testimonials.name">
     <div class="card">
       <div class="card-body">
         <img :src="testimonials.image" class="card-img">
@@ -29,8 +29,10 @@ export default {
 </script>
 <style>
     .card-img{
-      width: 40px;
+      width: 10px;
       justify-content: center;
-     padding: 10px;
+    }
+    .card-title-1{
+      text-align: center;
     }
 </style>

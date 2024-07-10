@@ -68,7 +68,7 @@ export default {
 .details-container {
   width: 600px;
   margin-left: 20%;
-  background: rgb(225, 172, 172);
+  background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);

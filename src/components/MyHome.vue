@@ -1,5 +1,5 @@
 <template>
-<section id="profile">
+<section id="home">
       <div class="section__pic-container">
         <img src="https://zubayrlatief.github.io/portfolio_hostedImages/myportfolioimg.jpg" alt="profile picture" loading="lazy">
       </div>
@@ -13,9 +13,11 @@
              Download CV
           </button>
           </a>
-          <button class="btn btn-color-1" href="#contact">
+          <a href="#contact">
+          <button class="btn btn-color-1" >
             Contact Info
           </button>
+        </a>
         </div>
         <div id="socials-container">
           <a href="https://za.linkedin.com/in/zubayr-latief-254805280" target="_blank"><img
@@ -40,12 +42,11 @@ export default {
 </script>
 
 <style>
-#profile {
+#home {
   background: grey;
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 60vh;
 }
 
 .section__pic-container {
