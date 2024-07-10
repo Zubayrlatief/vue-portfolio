@@ -58,6 +58,7 @@
 .project-title {
   margin: 1rem;
   color: black;
+  text-align: center;
 }
 
 .project-btn {

@@ -5,7 +5,7 @@
         <div class="about-containers">
           <div class="details-container">
             <div class="article-container" v-if="getExperience()">
-              <article v-for="experience in getExperience()" :key="experience">
+              <article v-for="experience in $store.state.experience" :key="experience.placeOfInstitution">
                 <img
                    :src="experience.image"
                   alt="Experience icon"
@@ -19,12 +19,16 @@
         </div>
         </div>
       </div>
-      <div class="card">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  
+<div class="card-deck" v-for="codingSkills in $store.state.codingSkills" :key="codingSkills.name">
+  <div class="card">
+    <img class="card-img-top" :src="codingSkills.image" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ codingSkills.name }}</h5>
+      <p class="card-text">{{ codingSkills.ability }}</p>
+    </div>
   </div>
-</div>
+  </div>
     </section>
 </template>
 
@@ -81,5 +85,23 @@ article {
 
 article .icon {
   cursor: default;
+}
+.card{
+  width: 400px;
+  background-color: grey;
+}
+.card-img-top{
+  width: 500px;
+  height: 600px;
+  justify-content: center;
+
+}
+.card-title{
+  justify-content: center;
+  text-align: center;
+}
+.card-text{
+  justify-content: center;
+  text-align: center;
 }
 </style>

@@ -8,15 +8,17 @@
             alt="Profile picture"
             class="about-pic"
           />
-        </div>
           <div class="about-containers">
             <div class="details-container">
             
               <h3>A little bit about me</h3>
               <p>{{$store.state.aboutMe}}</p>
+        </div>
+         
             
             </div>
       </div>
+
     </section>
 </template>
 <script>
@@ -54,6 +56,7 @@ export default {
 
 .about-pic {
   border-radius: 2rem;
+  margin-left: 20%;
 }
 
 .arrow {
@@ -63,9 +66,9 @@ export default {
 }
 
 .details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
+  width: 600px;
+  margin-left: 20%;
+  background: rgb(225, 172, 172);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -82,5 +85,44 @@ export default {
   width: 400px;
   margin: auto 0;
 }
-    
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
 </style>

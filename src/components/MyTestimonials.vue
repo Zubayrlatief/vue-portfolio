@@ -29,7 +29,8 @@ export default {
 </script>
 <style>
     .card-img{
-      width: 100px;
+      width: 40px;
       justify-content: center;
+     padding: 10px;
     }
 </style>
