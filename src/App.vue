@@ -47,9 +47,7 @@ export default {
    overflow-x: hidden;
    font-family: "Roboto Slab", serif;
  }
- #footer{
-
- }
+ 
  section{
     width: 100%;
     padding: 80px 12%;
