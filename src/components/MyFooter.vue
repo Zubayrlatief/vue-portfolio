@@ -33,7 +33,7 @@
 
     
 
-     <style>
+     <style scoped>
      .footer-basic {
   padding:40px 0;
   background-color:#ffffff;

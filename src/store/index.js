@@ -40,7 +40,7 @@ export default createStore({
   },
   actions: {
     async getAboutMe ({commit}) {
-      let fetchInfo = await fetch('https://zubayrlatief.github.io/JsonFileForPortfolio/Data/data.json')
+      let fetchInfo = await fetch('https://zubayrlatief.github.io/json-file-vueportfolio/Data/data.json')
       let data = await fetchInfo.json()
       let {aboutMe, projects ,education, experience, codingSkills, softSkills, testimonials} = data
       console.log(data)

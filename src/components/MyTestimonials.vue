@@ -27,7 +27,7 @@ export default {
     },
 }
 </script>
-<style>
+<style scoped>
     .card-img{
       width: 10px;
       justify-content: center;
